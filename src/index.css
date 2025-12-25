@@ -1,14 +1,73 @@
-:root {
-  --font-serif: "Playfair Display", serif;
-  --font-sans: "Inter", sans-serif;
-
-  --color-primary: #0F3F2E;
-}
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ================================
+   Fonts & Colors
+================================ */
 
+:root {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-arabic: "Amiri", serif;
+
+  --color-primary: #5a6f5c;
+  --color-accent: #6f8f78;
+  --color-bg: #fafaf7;
+  --color-gold: #c9a84e;
+}
+
+/* ================================
+   Global Layout
+================================ */
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+.app-root {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.content-layer {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* Mobile tuning */
+@media (max-width: 768px) {
+  .spark {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .spark {
+    animation: none;
+  }
+}
+
+/* ================================
+   Buttons
+================================ */
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+/* Typography */
 @import "./styles/typography.css";

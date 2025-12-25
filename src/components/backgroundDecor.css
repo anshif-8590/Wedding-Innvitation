@@ -1,0 +1,26 @@
+
+
+.decor-wrapper {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.leaf {
+  position: absolute;
+  font-size: 28px;
+  color: rgba(143, 167, 155, 0.45);
+  animation: floatLeaf 10s ease-in-out infinite;
+}
+
+.l1 { top: 20%; left: 10%; }
+.l2 { top: 50%; left: 80%; animation-delay: 8s; }
+.l3 { top: 75%; left: 40%; animation-delay: 16s; }
+.l4 { top: 30%; left: 65%; animation-delay: 24s; }
+
+@keyframes floatLeaf {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}

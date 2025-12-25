@@ -2,41 +2,51 @@ import React from 'react'
 
 const Hero = () => {
   return (
+    <>
+      <section className="bg-transparent px-6 pt-14 pb-20 lg:pt-26 lg:pb-28 text-center">
 
+        {/* Arabic */}
+        <p className="text-arabic mb-4">
+          بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+        </p>
 
-    
-    <section className="bg-bg text-center py-[140px] relative">
-      <p className="text-[18px] tracking-[0.15em] text-primary mb-[24px]">
-        بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
-      </p>
+        {/* Translation */}
+        <p className="text-body max-w-xl mx-auto mb-10">
+          In the name of Allah, the most gracious, the most merciful
+        </p>
 
-      <p className="uppercase text-[11px] tracking-[0.3em] text-primary mb-[48px]">
-        In the name of Allah, the most gracious, the most merciful
-      </p>
+        {/* Groom */}
+        <h1 className="text-hero">
+          SHAFEEQUE SA’ADI
+        </h1>
 
-      <h1 className="font-serif text-[64px] leading-[76px] text-primary">
-        SHAFEEQUE SA’ADI
-      </h1>
+        {/* Ampersand */}
+        <div className="text-gold text-[28px] lg:text-[36px] my-4">
+          &
+        </div>
 
-      <div className="text-gold text-[42px] my-[20px]">&</div>
+        {/* Bride */}
+        <h1 className="text-hero">
+          AFEEFA HADIYA
+        </h1>
 
-      <h1 className="font-serif text-[64px] leading-[76px] text-primary">
-        AFEEFA HADIYA
-      </h1>
+        {/* Subtitle */}
+        <p className="text-hero-sub mt-6">
+          Are Getting Married
+        </p>
 
-      <p className="font-serif italic text-[26px] mt-[28px] text-primary">
-        Are Getting Married
-      </p>
+        {/* Sub text */}
+        <p className="text-body mt-3">
+          Join us in celebrating this blessed union
+        </p>
 
-      <p className="mt-[16px] text-[15px] text-primary/70">
-        Join us in celebrating this blessed union
-      </p>
-    </section>
+      </section>
+    </>
   );
 };
 
 export default Hero;
 
 
- 
+
 
