@@ -12,13 +12,14 @@ import Footer from '../components/Footer'
 const MainPages = () => {
   return (
     <>
-
-    <Hero/>
-    <Invitation />
-    <InfoCards />
-    <VideoSection />
-    <Blessings />
-    <Footer /> 
+      <div className="w-full h-full px-2 ">
+        <Hero />
+        <Invitation />
+        <InfoCards />
+        <VideoSection />
+        <Blessings />
+        <Footer />
+      </div>
     </>
   )
 };

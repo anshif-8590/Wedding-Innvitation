@@ -1,3 +1,14 @@
+:root {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-primary: #0F3F2E;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@import "./styles/typography.css";
