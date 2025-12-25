@@ -23,7 +23,7 @@ const comments = [
 
 const Blessings = () => {
   return (
-    <section className="px-6 py-20 lg:py-28">
+    <section className="px-6 py20 lg:py28">
       <div className="max-w-6xl mx-auto">
 
         {/* ================= HEADER (UNCHANGED) ================= */}
