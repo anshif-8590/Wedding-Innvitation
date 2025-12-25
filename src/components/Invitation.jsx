@@ -61,60 +61,7 @@ const Invitation = () => {
                 </p>
               </div>
 
-              {/* Divider */}
-              <div className="w-20 h-[2px] mx-auto my-8 bg-[var(--color-accent)]" />
-
-              {/* Event Info */}
-              <div className="grid gap-6 md:grid-cols-3 text-center mb-10">
-                <div>
-                  <p className="text-card-title mb-1">Date</p>
-                  <p className="text-body">Saturday, 10 Jan 2026</p>
-                </div>
-
-                <div>
-                  <p className="text-card-title mb-1">Venue</p>
-                  <p className="text-body">
-                    Badaru Swahaba Manzil<br />
-                    Iringallur
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-card-title mb-1">Time</p>
-                  <p className="text-body">11:00 AM onwards</p>
-                </div>
-              </div>
-
-              {/* Google Maps CTA */}
-              <a
-                href="https://maps.google.com/?q=Badaru+Swahaba+Manzil+Iringallur"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  inline-flex items-center gap-1 px-6 py-3 rounded-full
-                  border text-body font-medium transition
-                  hover:bg-[var(--color-accent)] hover:text-white
-                "
-                style={{ borderColor: "var(--color-accent)" }}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 21s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z"
-                  />
-                  <circle cx="12" cy="11" r="2.5" />
-                </svg>
-
-                View Location
-              </a>
+              
 
             </div>
           </div>
