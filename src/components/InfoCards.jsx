@@ -74,7 +74,7 @@ const InfoCards = () => {
             </p>
             {/* Google Maps CTA */}
               <a
-                href="https://maps.google.com/?q=Badaru+Swahaba+Manzil+Iringallur"
+                href="https://maps.app.goo.gl/fTTuTt25FMaKawWu7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
@@ -127,3 +127,4 @@ const InfoCards = () => {
 };
 
 export default InfoCards;
+// https://maps.google.com/?q=Badaru+Swahaba+Manzil+Iringallur

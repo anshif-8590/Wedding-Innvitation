@@ -17,7 +17,7 @@ const Hero = () => {
 
         {/* Groom */}
         <h1 className="text-hero">
-          SHAFEEQUE SA’ADI
+          UNAIS BIN BASHEER
         </h1>
 
         {/* Ampersand */}
@@ -27,7 +27,7 @@ const Hero = () => {
 
         {/* Bride */}
         <h1 className="text-hero">
-          AFEEFA HADIYA
+          FATHIMA NAJIYA
         </h1>
 
         {/* Subtitle */}

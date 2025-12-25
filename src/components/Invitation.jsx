@@ -52,12 +52,12 @@ const Invitation = () => {
               <div className="my-10">
                 <p className="text-card-title mb-2">The Groom</p>
                 <p className="text-section-title mb-6">
-                  Muhammad Shafeeque Sa’adi
+                  UNAIS BIN BASHEER
                 </p>
 
                 <p className="text-card-title mb-2">The Bride</p>
                 <p className="text-section-title">
-                  Afeefa Fathima Hadiya
+                  FATHIMA NAJIYA
                 </p>
               </div>
 

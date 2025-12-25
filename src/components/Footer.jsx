@@ -21,7 +21,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <p className="text-xs tracking-widest text-primary/60 uppercase">
-        © 2026 Shafeeque & Afeefa Wedding
+        © 2026 Unais & Najiya Wedding
       </p>
 
     </footer>
