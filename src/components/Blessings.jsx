@@ -1,9 +1,32 @@
+const comments = [
+  {
+    name: "Ameen & Family",
+    message: "May Allah bless your union with love, mercy, and tranquility."
+  },
+  {
+    name: "Farhana",
+    message: "May your marriage be filled with patience, understanding, and endless blessings."
+  },
+  {
+    name: "Rashid & Aisha",
+    message: "Congratulations on this beautiful journey. May Allah grant you peace and barakah."
+  },
+  {
+    name: "Nihal",
+    message: "Alhamdulillah, congrats both ❤️"
+  },
+  {
+    name: "Safvan",
+    message: "Barakallahu lakuma."
+  }
+];
+
 const Blessings = () => {
   return (
-    <section className=" px-6 py-20 lg:py-28">
+    <section className="px-6 py-20 lg:py-28">
       <div className="max-w-6xl mx-auto">
 
-        {/* Section Header */}
+        {/* ================= HEADER (UNCHANGED) ================= */}
         <div className="text-center mb-14">
           <h2 className="text-section-title mb-4">
             Blessings & Prayers
@@ -14,18 +37,17 @@ const Blessings = () => {
           </p>
         </div>
 
-        {/* Main Content */}
-        <div className="grid gap-10 lg:grid-cols-2 items-start">
+        {/* ================= CONTENT ================= */}
+        <div className="grid gap-12 lg:gap-0 lg:grid-cols-2 items-start">
 
-          {/* ================= FORM ================= */}
+          {/* ================= FORM (UPDATED) ================= */}
           <div
-            className="p-6 lg:p-8 h-[420px] flex flex-col border rounded-2xl"
-            style={{ borderColor: "var(--color-border)" }}
+            className="mx-auto w-full max-w-sm p-6 rounded-2xl flex flex-col"
+            style={{
+              backgroundColor: "#ffffff",
+              boxShadow: "0 12px 30px rgba(0,0,0,0.06)"
+            }}
           >
-            <p className="text-label mb-6">
-              Leave a Blessing
-            </p>
-
             <div className="space-y-4 flex-1">
               <input
                 type="text"
@@ -41,72 +63,48 @@ const Blessings = () => {
               />
             </div>
 
-            <button className="btn-primary mt-6 w-full py-3 rounded-lg font-medium">
+            {/* Reduced gap here */}
+            <button
+              className="mt-4 w-full py-3 rounded-lg font-medium transition"
+              style={{
+                backgroundColor: "#3f5f4b",
+                color: "#ffffff"
+              }}
+              onMouseEnter={e =>
+                (e.currentTarget.style.backgroundColor = "#2f4f3a")
+              }
+              onMouseLeave={e =>
+                (e.currentTarget.style.backgroundColor = "#3f5f4b")
+              }
+            >
               Send Blessing →
             </button>
           </div>
 
-          {/* ================= COMMENTS ================= */}
-          <div
-            className="p-6 h-[420px] overflow-y-auto space-y-6 border rounded-2xl"
-            style={{ borderColor: "var(--color-border)" }}
-          >
-            <Comment
-              name="Ameen & Family"
-              message="May Allah bless your union with love, mercy, and tranquility."
-            />
-
-            <Comment
-              name="Farhana"
-              message="May your marriage be filled with patience, understanding, and endless blessings."
-            />
-
-            <Comment
-              name="Rashid & Aisha"
-              message="Congratulations on this beautiful journey. May Allah grant you peace and barakah."
-            />
-
-            <Comment
-              name="Ameen & Family"
-              message="Wishing you a lifetime of happiness together."
-            />
-
-            <Comment
-              name="Farhana"
-              message="Keep each other in your duas always."
-            />
-
-            <Comment
-              name="Rashid & Aisha"
-              message="May your home always be filled with imaan and love."
-            />
+          {/* ================= COMMENTS (YOUR DESIGN) ================= */}
+          <div className="h-[360px] overflow-y-auto pr-2 custom-scroll">
+            {comments.map((item, index) => (
+              <div
+                key={index}
+                className="
+                  bg-white rounded-lg px-4 py-3 mb-3
+                  border-l-4 border-[var(--color-accent)]
+                  shadow-sm hover:shadow-md transition
+                "
+              >
+                <p className="font-medium text-primary mb-1">
+                  {item.name}
+                </p>
+                <p className="text-body text-primary/70 italic">
+                  “{item.message}”
+                </p>
+              </div>
+            ))}
           </div>
 
         </div>
       </div>
     </section>
-  );
-};
-
-/* ================= COMMENT ITEM ================= */
-
-const Comment = ({ name, message }) => {
-  return (
-    <div className="relative pl-5">
-      {/* Accent line */}
-      <span
-        className="absolute left-0 top-1 h-full w-[2px]"
-        style={{ backgroundColor: "var(--color-accent)" }}
-      />
-
-      <p className="text-card-title mb-1">
-        {name}
-      </p>
-
-      <p className="text-body italic">
-        “{message}”
-      </p>
-    </div>
   );
 };
 
